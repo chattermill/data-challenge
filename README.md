@@ -5,7 +5,7 @@ A short technical challenge for data analyst candidates
 We would like you to demonstrate your skills in simple data manipulation and analysis. We are looking to understand how you approach the problem and knowledge of python/SQL and/or ability to learn new things on the fly.
 
 ### Data
-We have provided you with a dataset of app reviews for the popular reddit app. The csv file has multiple flaws and falls short of what we would like to work with, as is often the case and therefore want you to fix it.
+We have provided you with a dataset of app reviews for the popular reddit app. The csv file has multiple flaws and falls short of what we would like to work with, as is often the case and therefore we want you to fix it.
 
 ### Expected Output
 We expect you to parse the file and make sure that things are consistent and as orderly as possible. For example the app_bought and money_spent variables should be available in desirable buckets. We will leave it to you to define what is desirable. 
@@ -22,6 +22,7 @@ TEXT | TEXG | TEXT | INTEGER | TEXT | INTEGER | NUMERIC | TEXT | TEXT
 	1. Average per iso
 	2. Average score per app_bought_bucket
 	3. Average score overtime (weekly)
+
 The outputs should be available in an excel/google sheet file with graphs
 
 ### Notes
