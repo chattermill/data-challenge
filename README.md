@@ -13,9 +13,10 @@ You should produce two outputs:
 1. A new csv file with all the data in a format that is desirable to input into any system
 2. We would want you to populate the exercise_database.db database file. There are two tables: 
   i. reviews, which should be constructed as the csv file. It holds the following columns:
-  	review | title | iso | score | date | apps_bought | money_spent | apps_bought_bucket | money_spent_bucket
-	--- | --- | --- | --- |--- |--- |--- |--- |--- 
-	TEXT | TEXG | TEXT | INTEGER | TEXT | INTEGER | NUMERIC | TEXT | TEXT 
+  
+review | title | iso | score | date | apps_bought | money_spent | apps_bought_bucket | money_spent_bucket
+--- | --- | --- | --- |--- |--- |--- |--- |--- 
+TEXT | TEXG | TEXT | INTEGER | TEXT | INTEGER | NUMERIC | TEXT | TEXT 
 
 
 
