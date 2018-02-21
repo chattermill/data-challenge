@@ -26,10 +26,10 @@ Add the updated `exercise_database.db` and the code used to populate the databas
 
 Add the code used to generate the queries and a CSV with results into the archive.
 
-### Notes
-
+### Notes 
 - You should be able to complete the project within a couple of hours, not days.
 - If you don't have time to complete the full challenge, please focus on the quality of the solution to the parts you do complete.
 - Feel free to work in whatever language / framework you are most comfortable in, we usually prefer Python for data tasks.
 - Please focus on making the code clear and modular, rather than on the complexity of the solution. Treat your code as if it will be deployed to production. Which would mean taking into account things changing in the incoming data format, such as columns moving.
+- You can use a Jupyter Notebook if you prefer, but make sure your code is modular and could be deployed, i.e. it should probably be composed of functions.
 - You can use [this handy library](https://docs.python.org/2/library/sqlite3.html) to interact with the database from Python. [Here's](http://pythoncentral.io/introduction-to-sqlite-in-python/) a tutorial on it. There are similar libraries for other languages (R, Matlab). You can also use [this tool](http://sqlitebrowser.org/) if you want a GUI but we prefer programatic solutions.
