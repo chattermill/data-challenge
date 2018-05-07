@@ -19,12 +19,15 @@ def clean_date(data):
 	data['date'] = data.date.dt.date
 	return data
 
+def drop_column(data,cols):
+	data.drop(cols,axis=1,inplace=True)
+	return data
 
 def main():
 	df = pd.read_csv(file,index_col=False)
 	df = clean_date(df)
 	df = generate_buckets(df)
-
+	df = drop_column(df,['title','product_name'])
 	print(df.head())
 	df.to_csv('reviews_cleaned.csv',index=False)
 
