@@ -26,7 +26,7 @@ def main():
 	df = generate_buckets(df)
 
 	print(df.head())
-	df.to_csv('data_with_bucket.csv',index=False)
+	df.to_csv('reviews_cleaned.csv',index=False)
 
 if __name__ == "__main__":
 	main()
