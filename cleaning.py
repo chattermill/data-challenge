@@ -5,7 +5,7 @@ import pandas as pd
 file = "reddit_exercise_data.csv"
 
 def generate_buckets(data):
-	data['apps_bought_bucket'] = pd.cut(data.app_bought, [0,20,40,60,500],labels = ['<20','20-40','40-60','>60'])
+	data['apps_bought_bucket'] = pd.cut(data.app_bought, [0,20,40,60,500], include_lowest=True,labels = ['<20','20-40','40-60','>60'])
 	data['money_spent_bucket'] = pd.qcut(data.money_spent,5,labels=["1st_quantile","2nd_quantile","3rd_quantile","4th_quantile","5th_quantile"])
 	data['apps_bought_bucket'] = data.apps_bought_bucket.astype(str)
 	data['money_spent_bucket'] = data.money_spent_bucket.astype(str)
@@ -28,6 +28,7 @@ def main():
 	df = clean_date(df)
 	df = generate_buckets(df)
 	df = drop_column(df,['title','product_name'])
+
 	print(df.head())
 	df.to_csv('reviews_cleaned.csv',index=False)
 
