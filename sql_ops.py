@@ -13,7 +13,7 @@ def insert_data(df,conn):
 	# map column name
 	df = fix_column_name(df)
 	# insert rows
-	df.to_sql('reviews',conn, if_exists = 'append',index=False)
+	df.to_sql('reviews',conn, if_exists = 'replace',index=False)
 	print('INSERT SUCCESS')
 
 def main():
@@ -23,7 +23,7 @@ def main():
 	df = pd.read_csv(f,index_col=False)
 	insert_data(df,conn)
 
-	# queries
+	# QUERIES
 	print('AVERAGE SCORE BY ISO')
 	c.execute('SELECT iso,AVG(score) FROM reviews GROUP BY iso')
 	for row in c.fetchall()[:5]:
