@@ -27,7 +27,7 @@ def groupNumbers(series, q=4, set_labels=False):
     return series
 
 if __name__ == "__main__":
-    dataset_path = "C:/Users/JeanMalo.Delignon/Downloads/2013_ALL/reddit_exercise_data.csv"
+    dataset_path = "reddit_exercise_data.csv"
     df = pd.read_csv(dataset_path,parse_dates=['date'])
     df.rename(columns = {'app_bought':'apps_bought'}, inplace = True)
     df['title'] = cleanText(df['title'], stemming=True)
