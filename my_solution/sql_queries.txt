@@ -1,0 +1,15 @@
+1.
+    SELECT 
+        iso, AVG(score) AS avg_score
+    FROM reviews 
+    GROUP BY iso 
+2.
+    SELECT
+        app_bought_bucket, MAX(score) AS max_score
+    FROM reviews
+    GROUP BY app_bought_bucket 
+3.
+    SELECT
+        date AS day, AVG(score) AS avg_score
+    FROM reviews
+    GROUP BY date 
